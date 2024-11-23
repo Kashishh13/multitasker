@@ -1,0 +1,139 @@
+.currency-convert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+   background-repeat: no-repeat;
+   background-size: cover;
+    background-image: url("https://png.pngtree.com/background/20230616/original/pngtree-virtual-currency-revolution-bitcoin-ethereum-and-cardano-3d-rendered-together-pioneers-picture-image_3664304.jpg");
+  }
+  
+  .currency-convert h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .converter-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .amount-input,
+  .converted-amount,
+  .currency-select {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #141414;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 45%;
+  }
+  
+  .amount-input,
+  .converted-amount {
+    width: 60%;
+    text-align: right;
+  }
+  
+  .currency-select {
+    width: 35%;
+  }
+  
+  .to {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .convert-button {
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .convert-button:hover {
+    background-color: #262726;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .loading {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .converter-container {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    .input-group {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .amount-input,
+    .converted-amount,
+    .currency-select {
+      width: 100%;
+    }
+  
+    .to {
+      margin: 15px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .amount-input,
+    .converted-amount {
+      font-size: 1rem;
+    }
+  
+    .currency-select {
+      font-size: 1rem;
+    }
+  
+    .convert-button {
+      font-size: 1rem;
+    }
+  }
+  

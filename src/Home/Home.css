@@ -1,0 +1,98 @@
+/* Ensure the body and html elements take up full height */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Use min-height for container to ensure it takes full viewport height */
+  .container {
+    min-height: 100vh; /* Ensure container is at least as tall as the viewport */
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1510987836583-e3fb9586c7b3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; /* Ensure the background covers the full container */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Optional: Add a fixed background effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content */
+  }
+  
+  /* Title styling */
+  .home-container h1  {
+  
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* Main container */
+  .home-container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1; /* Ensure it takes remaining space if needed */
+  }
+  
+  /* Tools container: Flexbox to display boxes in row */
+  .tools-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Tool box styling */
+  .tool-box {
+    background-color: white;
+    color: black;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(20, 19, 19, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Tool box hover effect */
+  .tool-box:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Tool box heading styling */
+  .tool-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  /* Tool box description */
+  .tool-box p {
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    /* Stack the tool boxes in a column on smaller screens */
+    .tools-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Make tool boxes smaller on very small screens */
+    .tool-box {
+      width: 200px;
+      padding: 15px;
+    }
+  }
+.link{
+    text-decoration: none;
+}  
